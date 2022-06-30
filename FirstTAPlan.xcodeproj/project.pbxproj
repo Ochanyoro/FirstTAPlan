@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8230231C286D7A9000AF36D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230231B286D7A9000AF36D5 /* SettingsView.swift */; };
+		8266FB22286D83940083FC60 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266FB21286D83940083FC60 /* SettingsRowView.swift */; };
+		8266FB24286D8A2C0083FC60 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266FB23286D8A2C0083FC60 /* Extensions.swift */; };
 		8296AC62286D6A6900267598 /* FirstTAPlanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC61286D6A6900267598 /* FirstTAPlanApp.swift */; };
 		8296AC64286D6A6900267598 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC63286D6A6900267598 /* ContentView.swift */; };
 		8296AC66286D6A6A00267598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8296AC65286D6A6A00267598 /* Assets.xcassets */; };
 		8296AC69286D6A6A00267598 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8296AC68286D6A6A00267598 /* Preview Assets.xcassets */; };
+		8296AC73286D6D4500267598 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC72286D6D4500267598 /* LikeAnimationView.swift */; };
+		8296AC77286D6F8C00267598 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC76286D6F8C00267598 /* Overview.swift */; };
+		8296AC79286D713600267598 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC78286D713600267598 /* TopView.swift */; };
+		8296AC83286D7A0E00267598 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC82286D7A0E00267598 /* SettingsLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8230231B286D7A9000AF36D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8266FB21286D83940083FC60 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		8266FB23286D8A2C0083FC60 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8296AC5E286D6A6900267598 /* FirstTAPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTAPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8296AC61286D6A6900267598 /* FirstTAPlanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTAPlanApp.swift; sourceTree = "<group>"; };
 		8296AC63286D6A6900267598 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8296AC65286D6A6A00267598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8296AC68286D6A6A00267598 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8296AC72286D6D4500267598 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
+		8296AC76286D6F8C00267598 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
+		8296AC78286D713600267598 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		8296AC82286D7A0E00267598 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 		8296AC60286D6A6900267598 /* FirstTAPlan */ = {
 			isa = PBXGroup;
 			children = (
+				8296AC6F286D6D1100267598 /* Views */,
 				8296AC61286D6A6900267598 /* FirstTAPlanApp.swift */,
 				8296AC63286D6A6900267598 /* ContentView.swift */,
 				8296AC65286D6A6A00267598 /* Assets.xcassets */,
@@ -65,6 +80,36 @@
 				8296AC68286D6A6A00267598 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8296AC6F286D6D1100267598 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8296AC71286D6D2300267598 /* SubViews */,
+				8296AC70286D6D1700267598 /* MainViews */,
+				8266FB23286D8A2C0083FC60 /* Extensions.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8296AC70286D6D1700267598 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				8230231B286D7A9000AF36D5 /* SettingsView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		8296AC71286D6D2300267598 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				8296AC72286D6D4500267598 /* LikeAnimationView.swift */,
+				8296AC76286D6F8C00267598 /* Overview.swift */,
+				8296AC78286D713600267598 /* TopView.swift */,
+				8296AC82286D7A0E00267598 /* SettingsLabelView.swift */,
+				8266FB21286D83940083FC60 /* SettingsRowView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8230231C286D7A9000AF36D5 /* SettingsView.swift in Sources */,
+				8266FB24286D8A2C0083FC60 /* Extensions.swift in Sources */,
+				8296AC83286D7A0E00267598 /* SettingsLabelView.swift in Sources */,
+				8296AC77286D6F8C00267598 /* Overview.swift in Sources */,
+				8296AC79286D713600267598 /* TopView.swift in Sources */,
+				8266FB22286D83940083FC60 /* SettingsRowView.swift in Sources */,
+				8296AC73286D6D4500267598 /* LikeAnimationView.swift in Sources */,
 				8296AC64286D6A6900267598 /* ContentView.swift in Sources */,
 				8296AC62286D6A6900267598 /* FirstTAPlanApp.swift in Sources */,
 			);
@@ -280,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kazuhiroowada.FirstTAPlan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazuhiroowada.FirstTAPlan1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,7 +361,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kazuhiroowada.FirstTAPlan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazuhiroowada.FirstTAPlan1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

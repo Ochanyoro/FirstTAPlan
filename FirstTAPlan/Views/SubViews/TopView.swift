@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TopView.swift
 //  FirstTAPlan
 //
 //  Created by 大和田一裕 on 2022/06/30.
@@ -7,21 +7,35 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
-    @State var animateLike : Bool = true
-    let screen = UIScreen.main.bounds
+struct TopView: View {
     
     var body: some View {
         VStack{
-            
             HStack{
-                Image("")
-            Text("TA 企画第 1 弾")
-                .font(.title3)
-                .fontWeight(.medium)
-                .padding()
+                Image("top")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 60, height: 60)
+                    .cornerRadius(30)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color.white, lineWidth: 4)
+                    )
+                    //.shadow(radius: 10)
+                Spacer()
+                
+                Text("TA(Ochan) 企画第 1 弾")
+                    .font(.title3)
+                    .fontWeight(.medium)
+                    .padding()
+                    .foregroundColor(Color.white)
+                
+                Spacer()
+                
             }
+            .frame(maxWidth: .infinity)
+            .padding(5)
+            .background(Color.red.opacity(0.9))
             
             HStack {
                 Image(systemName: "star.fill")
@@ -45,7 +59,7 @@ struct ContentView: View {
             
             
             ZStack {
-                Image("3-6")
+                Image("activity")
                     .resizable()
                     .scaledToFit()
                 
@@ -54,17 +68,17 @@ struct ContentView: View {
                 
             }
             .padding(.top, 20)
-            
-            Spacer()
-            
-            Overview()
         }
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct TopView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ZStack{
+            Color.gray.opacity(0.1)
+            .edgesIgnoringSafeArea(.all)
+            TopView()
+        }
+          
     }
 }
